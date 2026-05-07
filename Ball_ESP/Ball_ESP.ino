@@ -4,10 +4,10 @@
 Adafruit_MPU6050 mpu;
 
 // --- CONFIGURABLE THRESHOLDS ---
-float WINDUP_THRESHOLD = 12.0;  // Force needed to start a shot
+float WINDUP_THRESHOLD = 15.0;  // Force needed to start a shot
 float RELEASE_THRESHOLD = 5.0;  // Force to trigger freefall
 float IMPACT_THRESHOLD = 15.0;  // Force of hitting the target/pillow
-float TWIST_THRESHOLD = 8.0;    // Gyro spin speed needed to unlock (rad/s)
+float TWIST_THRESHOLD = 7.0;    // Gyro spin speed needed to unlock (rad/s)
 
 // --- GLOBAL VARIABLES ---
 bool isUnlocked = false;       
