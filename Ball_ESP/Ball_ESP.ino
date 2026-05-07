@@ -29,8 +29,6 @@ unsigned long cooldownStartTime = 0;
 void setup() {
   Serial.begin(115200);
   mpu.begin();
-  
-  // Expand sensor ranges for sports-level forces
   mpu.setAccelerometerRange(MPU6050_RANGE_16_G); 
   mpu.setGyroRange(MPU6050_RANGE_1000_DEG); 
   
